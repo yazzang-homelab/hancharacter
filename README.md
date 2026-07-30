@@ -34,17 +34,13 @@ A model may help produce material for review, but it never authorises a gate. Re
 
 - Attribution determines which rows belong to which speaker before voice measurement. Undeclared labels, mixed speaker spans, duplicate source rows, pending T2 guesses, and missing target text stay visible rather than becoming a clean denominator.
 - The catalogue records source types, target realisations, authored probes, independently filed corpus reviews, published-edition precedents, human confirmations, and dialect decisions.
-- Contract sealing requires canonical types, source measurement availability, a feasible layout, usable glyphs, per-speaker coverage, and a resolved dialect decision where a dialect pair is declared.
+- Contract sealing requires source measurement availability, a feasible layout, usable glyphs, per-speaker coverage, and a resolved dialect decision where a dialect pair is declared. What it requires of the *evidence* depends on the declared authority: a `precedent_backed` contract needs a canonical type, a `translator_declared` one needs the source-side evidence only. See **Two authorities** below.
 - Corpus gates check marker presence, forbidden markers, exclusivity, density, recurrent novel final forms, quote parity, and a priority-ladder drop ledger. LOSS and INVENTION are both defects.
 
 On a `prose_fidelity` work, voice-loss DENSITY is report-only and the presence-class gates carry the guarantee. The default coverage floor is X=0.70 (`config.COVERAGE_FLOOR_X`); a profile may declare a lower per-work floor, and both the declared floor and the applied contract floor are published. The voice-LOSS classes v1 cannot detect: dialect semantic fidelity, and anything on ineligible or duplicate-source rows. "처음부터 끝까지" means the contract governs every line of the work, NOT that the marker appears on 100% of lines — the faithful realisation is the measured, often intermittent source density, and forcing a marker onto every line is itself a defect that the invention and saturation lints reject. The narrow residual on mixed rows carrying both attributed speech and narration is reported, not hard.
 
 
 Density is `matched eligible units / eligible units` for one `(scope, axis)`. It uses a source p10–p90 per-scene band, a Wilson 95% interval, `OUTER_TOL=0.15`, `MIN_UNITS_PER_SCOPE=20`, and `MIN_SCENES_PER_BAND=5`. A dual-standard work widens its band by `DUAL_STD_WIDEN=0.10`; it does not turn a density report into a hard verdict.
-
-### Declared limitation
-
-A `translator_declared` contract asserts only that the translator's own declared rendering is applied faithfully; it makes no claim that the rendering is correct Korean. The authority is bound into the seal hash and stamped on every gate summary so the weaker claim cannot be read as the stronger one.
 
 ## Two authorities
 
@@ -85,8 +81,13 @@ The project does not claim to judge literary quality, to infer a speaker from a 
 - `docs/gates.md` gives the ordered gate and waiver semantics.
 - `docs/spine.md` defines segmentation and eligibility.
 - `docs/evidence.md` explains the shipped evidence state and its derivation.
+- `GUIDE.ko.md` is the Korean guide and leads with what the tool cannot do.
+- `catalogue/SOURCES.md` lists every cited source **and every source that could not be verified and was therefore excluded**.
+- `skills/hancharacter/SKILL.md` is the slash-command skill definition; `SKILL.md` at the root is the operator discipline note.
 
 ## Declared limitations
+
+A `translator_declared` contract asserts only that the translator's own declared rendering is applied faithfully; it makes no claim that the rendering is correct Korean. The authority is bound into the seal hash and stamped on every gate summary so the weaker claim cannot be read as the stronger one.
 
 Dual-standard density is report-only.
 
@@ -104,7 +105,7 @@ The mixed-row smear residual is reported rather than hard.
 
 The single adopted precedent behind the only near-canonical type was corrected down to `contested` because it rested on one wiki list with no broadcast or publication record, which is the same standard already applied to `prec_fleur_ieung_ko` and `prec_gozaru_haoche_ko`. Applying one standard cost that type its canonical status.
 
-Overall inter-rater kappa is 87/143 (0.6084) across 42 reviewed rows, and the canonical type's own kappa is exactly 3/5.
+Overall inter-rater kappa is 87/143 (0.6084) across 42 reviewed rows. No type is canonical, so no canonical kappa exists; the nearest type, `ja_hao_gozaru`, sits at exactly 3/5.
 
 `e1e2_sources` is 0 for seven of ten types; three are supported by one secondary academic source, a non-refereed departmental bulletin paper.
 
