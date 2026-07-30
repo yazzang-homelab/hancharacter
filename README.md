@@ -1,8 +1,8 @@
 # hancharacter
 
-**한국어 가이드: [GUIDE.ko.md](GUIDE.ko.md)**
-
 `hancharacter` measures a source character's speech-style markers, records the evidence that justifies them, and refuses a target rendering that loses or invents that measured voice. On the shipped catalogue, no contract can seal: 0 of 10 types are canonical. `ja_hao_gozaru` is `provisional` and now meets every canonical criterion except one — it has no adopted precedent, because the only candidate was corrected down to `contested` for consistency with its siblings. It is a Python 3.9+ standard-library-only command-line tool; run it from a checkout with `./bin/hancharacter` and do not install a package or contact a service.
+
+**한국어 가이드: [GUIDE.ko.md](GUIDE.ko.md)**
 
 
 The tool separates three claims that must not be confused:
