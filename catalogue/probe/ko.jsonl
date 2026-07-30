@@ -1,0 +1,26 @@
+{"id": "probe_ko_plain_assert", "lang": "ko", "markedness": "unmarked", "origin": "authored_synthetic", "text": "오늘은 항구까지 걸었다."}
+{"id": "probe_ko_plain_question", "lang": "ko", "markedness": "unmarked", "origin": "authored_synthetic", "text": "그 짐은 누구 것이냐."}
+{"id": "probe_ko_polite_assert", "lang": "ko", "markedness": "unmarked", "origin": "authored_synthetic", "text": "이것이 마지막 보고입니다."}
+{"id": "probe_ko_polite_past", "lang": "ko", "markedness": "unmarked", "origin": "authored_synthetic", "text": "방금 확인했습니다."}
+{"id": "probe_ko_nyan_assert", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "배가 고프냥."}
+{"id": "probe_ko_nyan_copula", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "여기는 내 자리다냥."}
+{"id": "probe_ko_daneung_assert", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "이 신간은 명작이라능."}
+{"id": "probe_ko_daneung_plain", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "벌써 다 팔렸다능."}
+{"id": "probe_ko_chuuni_name", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "내 이름은 경계의 관측자."}
+{"id": "probe_ko_chuuni_address", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "그대는 무엇을 구하러 왔는가."}
+{"id": "probe_ko_chuuni_dark", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "어둠의 계약은 이미 맺어졌다."}
+{"id": "probe_ko_chuuni_awaken", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "잠든 칼날이여, 각성하라."}
+{"id": "probe_ko_jimalimnida_report", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "전원 배치 완료했지 말입니다."}
+{"id": "probe_ko_jimalimnida_plain", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "제가 옮기지 말입니다."}
+{"id": "probe_ko_hao_assert", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "내 칼은 여기 있소이다."}
+{"id": "probe_ko_hao_io", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "이것이 주인의 명이오."}
+{"id": "probe_ko_hao_guryeo", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "문은 이미 닫혔구려."}
+{"id": "probe_ko_elder_gumeon", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "예전에는 잘 잡혔구먼."}
+{"id": "probe_ko_elder_iroda", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "서두르지 않아도 되는 것이로다."}
+{"id": "probe_ko_elder_nora", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "차라도 마시고 가노라."}
+{"id": "probe_ko_nanodesu_assert", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "등대는 저쪽인 것입니다."}
+{"id": "probe_ko_nanodesu_soft", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "순서는 이쪽부터인 거예요."}
+{"id": "probe_ko_fleur_nidang", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "저는 분수 옆에서 기다립니당."}
+{"id": "probe_ko_fleur_yeyong", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "그건 제 것이 아니예용."}
+{"id": "probe_ko_fleur_haeyong", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "제가 먼저 확인해용."}
+{"id": "probe_ko_chinese_impression", "lang": "ko", "markedness": "marked", "origin": "authored_synthetic", "text": "그건 내 것이 아니다해."}

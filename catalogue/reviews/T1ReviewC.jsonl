@@ -1,0 +1,16 @@
+{"note": "Quote 'おどろかないでござる' is a Hattori-kun line showing V+negative+でござる, matching the marker and the cited locator.", "reviewer": "T1ReviewC", "sample_id": "s101", "verdict": "accept"}
+{"note": "'見ちゃおれんでござる' attests でござる after a negated verb in 新忍者ハットリくん, exactly the cited V+否定+ござる pattern.", "reviewer": "T1ReviewC", "sample_id": "s102", "verdict": "accept"}
+{"note": "'いたくないでござる' is adjective+negation+でござる, matching the A+否定+ござる locator and attesting ござる in the work.", "reviewer": "T1ReviewC", "sample_id": "s103", "verdict": "accept"}
+{"note": "'だましたでござるな' shows past-tense verb + でござる in Hattori-kun, matching the V+過去+ござる locator.", "reviewer": "T1ReviewC", "sample_id": "s104", "verdict": "accept"}
+{"note": "'入るでござるか' attests ござる followed by the final particle か, matching the ござる+終助詞 locator.", "reviewer": "T1ReviewC", "sample_id": "s105", "verdict": "accept"}
+{"note": "'いい考えがござる' is the existential (ある) use of ござる, matching the 旧用法 存在動詞 locator for the named work.", "reviewer": "T1ReviewC", "sample_id": "s106", "verdict": "accept"}
+{"note": "'ただものではござらぬ' is nominal+でござる (negated), attesting the ござる marker in Hattori-kun per the 体言+でござる locator.", "reviewer": "T1ReviewC", "sample_id": "s107", "verdict": "accept"}
+{"note": "'ではなかったでござるよ' attests でござる in るろうに剣心, and the locator is explicitly the cross-work corroboration item.", "reviewer": "T1ReviewC", "sample_id": "s108", "verdict": "accept"}
+{"note": "Quote contains both わし and じゃ as an elder-speech example under the 老人語 locator, attesting the markers as role-language material.", "reviewer": "T1ReviewC", "sample_id": "s121", "verdict": "accept"}
+{"note": "Quote gives ワシ/じゃ/のう forms and the locator is the paper's ＜博士語＞ section, tying the markers to the 博士 character class.", "reviewer": "T1ReviewC", "sample_id": "s122", "verdict": "accept"}
+{"note": "The quote is the bare marker string '〜じゃのう' with no propositional content and nothing tying it to children's folktales, so it attests nothing specific.", "reviewer": "T1ReviewC", "sample_id": "s123", "verdict": "reject"}
+{"note": "Quote explicitly documents 〜ワン/〜ニャ as endings used when animals are anthropomorphized, matching the class claim.", "reviewer": "T1ReviewC", "sample_id": "s131", "verdict": "accept"}
+{"note": "Three ワン-ending lines cited to the 獅子丸 example item attest the ワン marker in 新忍者ハットリくん.", "reviewer": "T1ReviewC", "sample_id": "s132", "verdict": "accept"}
+{"note": "Quote names バカボンのパパ with 「～なのだ」, which per the rubric attests that character's ending in 天才バカボン.", "reviewer": "T1ReviewC", "sample_id": "s141", "verdict": "accept"}
+{"note": "Quote is bare 食べる-っす/食べた-っす paradigm forms; neither quote nor the locator '2節（4b）' ties っす to the 体育会系後輩 character class being claimed.", "reviewer": "T1ReviewC", "sample_id": "s151", "verdict": "reject"}
+{"note": "Quote defines 視覚方言 as deliberate spelling distortion and sits under the 他言語での例/英語 locator, documenting it as characteristic of English-language literature.", "reviewer": "T1ReviewC", "sample_id": "s161", "verdict": "accept"}

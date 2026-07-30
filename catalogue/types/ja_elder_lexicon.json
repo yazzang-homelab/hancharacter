@@ -1,0 +1,17 @@
+{
+ "axis": "lexical_register",
+ "description": "Elder role lexicon.",
+ "id": "ja_elder_lexicon",
+ "pattern_set": [
+  "わし(?:は|が|の|を|も)",
+  "のじゃ[。！？!?…]*$",
+  "じゃのう[。！？!?…]*$",
+  "ぞい[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "The canonical yakuwarigo elder voice: a pronoun plus copula bundle indexing age and authority. Positional because it attaches to the elder role, and lexical because the pronoun choice carries the marker as much as the ending does.",
+  "origin": "positional"
+ },
+ "source_lang": "ja",
+ "source_marker": "わし / のじゃ elder lexicon"
+}

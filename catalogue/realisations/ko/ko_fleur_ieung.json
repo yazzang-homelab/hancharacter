@@ -1,0 +1,31 @@
+{
+ "density_band_default": [
+  0.35,
+  0.85
+ ],
+ "edition_channel": "unpublished",
+ "glyph_requirements": [
+  "Hangul syllables carrying a final ㅇ jongseong (U+AC00..U+D7A3)"
+ ],
+ "id": "ko_fleur_ieung",
+ "length_cost": {
+  "model": "append",
+  "value": 0
+ },
+ "notes": "Phoneme substitution rather than suffixing, so the length cost is about zero. The exact ending inventory used by the published Korean edition is recorded as approximate; catalogue/SOURCES.md states what was and was not directly verified. edition_channel 은 unpublished 로 정정한다: 이 실현이 인용한 선례 중 adopted 인 것이 없으며, 이 한국어 형태는 이 프로젝트의 제안이다. 출판 경로를 사실과 다르게 표기하면 P2 가 봉인할 산출물에 거짓 출처가 실린다.",
+ "pattern_set": [
+  "니당[.!?…]*$",
+  "예용[.!?…]*$",
+  "해용[.!?…]*$",
+  "이에용[.!?…]*$"
+ ],
+ "precedents": [
+  "prec_fleur_ieung_ko"
+ ],
+ "source_lang": "en",
+ "source_marker": "French-accented eye dialect",
+ "target_axis": "phoneme_substitution",
+ "target_lang": "ko",
+ "target_realisation": "ㅇ-받침 orthographic distortion (~니당 / ~예용)",
+ "type_id": "en_eye_dialect_fleur"
+}

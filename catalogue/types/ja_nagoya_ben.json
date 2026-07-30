@@ -1,0 +1,15 @@
+{
+ "axis": "dialect_policy",
+ "description": "Auxiliary: regional LOSS carrier.",
+ "id": "ja_nagoya_ben",
+ "pattern_set": [
+  "だがや[。！？!?…]*$",
+  "みゃー"
+ ],
+ "provenance": {
+  "notes": "Auxiliary type. Carries a documented LOSS case where a regional voice was flattened to standard Korean.",
+  "origin": "regional"
+ },
+ "source_lang": "ja",
+ "source_marker": "~だがや / みゃー (Nagoya)"
+}

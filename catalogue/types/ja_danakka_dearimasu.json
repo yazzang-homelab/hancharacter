@@ -1,0 +1,16 @@
+{
+ "axis": "speech_level",
+ "description": "Military-report copula.",
+ "id": "ja_danakka_dearimasu",
+ "pattern_set": [
+  "であります[。！？!?…]*$",
+  "でありました[。！？!?…]*$",
+  "でありますか[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "Carried by a role rather than a person: the military-report register attaches to the speaker's position. Two speakers in the same position share it, which is what separates a positional origin from an individual quirk.",
+  "origin": "positional"
+ },
+ "source_lang": "ja",
+ "source_marker": "~であります"
+}

@@ -1,0 +1,17 @@
+{
+ "axis": "utterance_frame",
+ "description": "Chuunibyou grandiose utterance frame.",
+ "id": "ja_chuunibyou_frame",
+ "pattern_set": [
+  "^我が名は",
+  "汝(?:は|を|に|の)",
+  "^闇の",
+  "覚醒せよ"
+ ],
+ "provenance": {
+  "notes": "A whole-utterance frame plus self-reference, not a sentence-final ending: the speaker wraps ordinary content in archaic grandiosity. Distinct from a copula swap because the marker is positional at the start of the utterance and in the address term.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "grandiose self-naming / archaic address frame"
+}

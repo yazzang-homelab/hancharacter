@@ -1,0 +1,16 @@
+{
+ "axis": "ending_transform",
+ "description": "Marked otaku copula rendered in Korean as ~다능.",
+ "id": "ja_otaku_copula",
+ "pattern_set": [
+  "だお[。！？!?…]*$",
+  "ですお[。！？!?…]*$",
+  "なんだお[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "The marked net-otaku お-copula. The generic casual ~だね is deliberately EXCLUDED from the pattern set: it is unmarked ordinary speech, and a type that fires on it would flag faithful translation of every casual speaker.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~だお / ~ですお (net-otaku copula)"
+}

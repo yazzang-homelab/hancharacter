@@ -1,0 +1,15 @@
+{
+ "axis": "ending_transform",
+ "description": "Auxiliary: ending-to-regional precedent carrier.",
+ "id": "ja_zerozaki_cha",
+ "pattern_set": [
+  "(?<![くぐっんちしじ])ちゃ[。！？!?…]*$",
+  "ちゃね[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "Auxiliary type. Carries a precedent where a Japanese ending was rendered with a Korean regional construction rather than a standard ending. 무표지 축약형 ~なくちゃ / ~しちゃ 를 배제하기 위해 선행 く·ぐ·っ·ん·ち·し·じ 를 부정 후방탐색으로 제외한다. なくちゃ 뿐 아니라 食べちゃった·っちゃ·んちゃ 같은 て형 축약 계열 전체가 무표지이기 때문이다.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~ちゃ"
+}

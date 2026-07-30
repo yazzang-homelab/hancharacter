@@ -1,0 +1,30 @@
+{
+  "language": "en",
+  "units": [
+    {"text": "I ain't goin' nowhere, pal.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "Well, that is a fine kettle.", "matches": {"lexical_register": false, "sentence_habit": true, "orthographic_distortion": false}},
+    {"text": "I reckon we leave at dawn.", "matches": {"lexical_register": true, "sentence_habit": true, "orthographic_distortion": false}},
+    {"text": "The river is quiet.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "C'mon, mate, keep up.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "She was running quickly.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "That wuz a close call, sir.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "Mark my words, this will work.", "matches": {"lexical_register": false, "sentence_habit": true, "orthographic_distortion": false}},
+    {"text": "I want to go now.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "Lemme think, chap.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "The gate is open, isn't it?", "matches": {"lexical_register": false, "sentence_habit": true, "orthographic_distortion": false}},
+    {"text": "Ain't that the truth?", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "Good evening, madam.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "We arrived before noon.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "Ya ready, bucko?", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": true}},
+    {"text": "Listen, the bell rang twice.", "matches": {"lexical_register": false, "sentence_habit": true, "orthographic_distortion": false}},
+    {"text": "The lantern flickered.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "This is proper work, indeed.", "matches": {"lexical_register": true, "sentence_habit": false, "orthographic_distortion": false}},
+    {"text": "Gonna wait here, right?", "matches": {"lexical_register": false, "sentence_habit": true, "orthographic_distortion": true}},
+    {"text": "No one spoke.", "matches": {"lexical_register": false, "sentence_habit": false, "orthographic_distortion": false}}
+  ],
+  "densities": {
+    "lexical_register": 0.4,
+    "sentence_habit": 0.3,
+    "orthographic_distortion": 0.35
+  }
+}

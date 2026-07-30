@@ -1,0 +1,14 @@
+{
+ "axis": "ending_transform",
+ "description": "Auxiliary: assertive ending, edition variance carrier.",
+ "id": "ja_nanoda",
+ "pattern_set": [
+  "なのだ[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "Auxiliary type. Carries the dub-versus-print edition variance for one assertive ending. Distinct from ja_nanodesu: the plain copula and the polite copula are different speech levels. 일반 설명형 ~のだ 는 패턴에서 제외한다: 이는 역할어가 아닌 평범한 일본어이며, 실제로 이 저장소의 무표지 대조 행 その荷物は誰のものだ。 에 걸린다. 무표지 발화에 걸리는 패턴은 충실한 번역을 LOSS 로 잘못 판정한다.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~なのだ"
+}

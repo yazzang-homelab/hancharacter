@@ -1,0 +1,17 @@
+{
+ "axis": "speech_level",
+ "description": "Archaic samurai copula.",
+ "id": "ja_hao_gozaru",
+ "pattern_set": [
+  "ござる[。！？!?…]*$",
+  "でござる[。！？!?…]*$",
+  "ござらぬ[。！？!?…]*$",
+  "ござります[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "An archaic register borrowed from an earlier stage of the language to mark a character as out of his time. Historical rather than regional: it indexes an era, not a place.",
+  "origin": "historical"
+ },
+ "source_lang": "ja",
+ "source_marker": "~ござる"
+}

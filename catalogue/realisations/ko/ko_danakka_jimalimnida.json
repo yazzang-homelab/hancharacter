@@ -1,0 +1,13 @@
+{
+ "id": "ko_danakka_jimalimnida",
+ "overrides": {
+  "edition_channel": "official",
+  "notes": "Derived from ko_seumda_jimalimnida by preset because the two source markers ship the SAME Korean convention. Kept as a derivation rather than a second independent row so the catalogue never asserts that two identical target realisations differ. edition_channel 을 official 로 정정한다: 인용한 adopted 선례의 경로가 official 이다.",
+  "precedents": [
+   "prec_dearimasu_jimalimnida_ko"
+  ],
+  "source_marker": "~であります",
+  "type_id": "ja_danakka_dearimasu"
+ },
+ "preset": "ko_seumda_jimalimnida"
+}

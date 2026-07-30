@@ -1,0 +1,15 @@
+{
+ "axis": "ending_transform",
+ "description": "Auxiliary: edition-variant carrier.",
+ "id": "ja_monne_ending",
+ "pattern_set": [
+  "もんね[。！？!?…]*$",
+  "もんねー[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "Auxiliary type. Exists to carry the edition-variant precedent pair, where two Korean broadcasters shipped different renderings of one source marker.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~もんね"
+}

@@ -1,0 +1,10 @@
+# Synthetic PO classification fixture.
+msgid "Synthetic untranslated entry"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Synthetic fuzzy entry"
+msgstr "Synthetic fuzzy draft"
+
+msgid "Synthetic completed entry"
+msgstr "Synthetic completed translation"

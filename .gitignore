@@ -1,0 +1,22 @@
+# Never commit somebody else's game text, script dumps, ROM data, or fonts.
+# The corpus ships marker patterns, citations, and minimal quotation only.
+*.cia
+*.3ds
+*.nsp
+*.xci
+*.bcfnt
+*.ttf
+*.otf
+*.mbin
+text_src.json
+text_*.json
+work/
+extracted/
+e2e-out/
+
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/

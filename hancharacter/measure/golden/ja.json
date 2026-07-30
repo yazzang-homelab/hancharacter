@@ -1,0 +1,32 @@
+{
+  "language": "ja",
+  "units": [
+    {"text": "私は静かに待つのだ。", "matches": {"speech_level": true, "pronouns": true, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "それでいいです。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "拙者は先へ参るでござる。", "matches": {"speech_level": true, "pronouns": true, "ending_transform": true, "interjection_laugh": false, "lexical_register": true}},
+    {"text": "あはは、面白い。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": true, "lexical_register": false}},
+    {"text": "おぬしも来るか。", "matches": {"speech_level": false, "pronouns": true, "ending_transform": false, "interjection_laugh": false, "lexical_register": true}},
+    {"text": "今日は風が強い。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "恐れ入ります。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": true}},
+    {"text": "そうじゃ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "任せるっす。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "これで十分だ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "今日は穏やかだ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "ふふふ、秘密だ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": true, "lexical_register": false}},
+    {"text": "貴様には渡さぬ。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": true}},
+    {"text": "あれは古い橋だ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "参ろう。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "候。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": true}},
+    {"text": "我は知っている。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "眠いにゃ。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": false, "lexical_register": false}},
+    {"text": "えへへ、助かったです。", "matches": {"speech_level": true, "pronouns": false, "ending_transform": true, "interjection_laugh": true, "lexical_register": false}},
+    {"text": "普通の話をする。", "matches": {"speech_level": false, "pronouns": false, "ending_transform": false, "interjection_laugh": false, "lexical_register": false}}
+  ],
+  "densities": {
+    "speech_level": 0.6,
+    "pronouns": 0.15,
+    "ending_transform": 0.6,
+    "interjection_laugh": 0.15,
+    "lexical_register": 0.25
+  }
+}

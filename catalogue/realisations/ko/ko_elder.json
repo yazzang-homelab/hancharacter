@@ -1,0 +1,28 @@
+{
+ "density_band_default": [
+  0.4,
+  0.9
+ ],
+ "edition_channel": "unpublished",
+ "id": "ko_elder",
+ "length_cost": {
+  "model": "append",
+  "value": 2
+ },
+ "notes": "Lexical as well as morphological: the Korean convention carries the marker partly in word choice, so a pattern-only match under-counts it and measure/ja.py declares the axis lexical rather than applicable. 인용한 선례가 contested 로 정정되어 adopted 근거가 없으므로 edition_channel 을 unpublished 로 내린다.",
+ "pattern_set": [
+  "구먼[.!?…]*$",
+  "이로다[.!?…]*$",
+  "노라[.!?…]*$",
+  "느니라[.!?…]*$"
+ ],
+ "precedents": [
+  "prec_elder_lexicon_kr"
+ ],
+ "source_lang": "ja",
+ "source_marker": "わし / のじゃ",
+ "target_axis": "ending_transform",
+ "target_lang": "ko",
+ "target_realisation": "elder lexicon: ~구먼 / ~이로다 / ~노라",
+ "type_id": "ja_elder_lexicon"
+}

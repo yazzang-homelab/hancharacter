@@ -1,0 +1,16 @@
+{
+ "axis": "ending_transform",
+ "description": "Softening explanatory ending, intermittent by nature.",
+ "id": "ja_nanodesu",
+ "pattern_set": [
+  "なのです[。！？!?…]*$",
+  "なのですね[。！？!?…]*$",
+  "なのですか[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "An individual softening ending applied on top of ordinary polite speech. Observed density is INTERMITTENT: the speaker does not use it on every line, so a faithful realisation reproduces a band, not saturation.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~なのです"
+}

@@ -1,0 +1,16 @@
+{
+ "axis": "speech_level",
+ "description": "Clipped deferential copula.",
+ "id": "ja_seumda_ssu",
+ "pattern_set": [
+  "[っッ]ス[。！？!?…]*$",
+  "[っッ]スね[。！？!?…]*$",
+  "[っッ]スか[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "A clipped deferential level: politeness is retained but compressed, so it is a speech-level marker rather than a lexical one. Korean convention renders it with a military-adjacent deferential ending.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~っス / ~ッス"
+}

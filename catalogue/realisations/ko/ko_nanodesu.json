@@ -1,0 +1,25 @@
+{
+ "density_band_default": [
+  0.25,
+  0.7
+ ],
+ "edition_channel": "unpublished",
+ "id": "ko_nanodesu",
+ "length_cost": {
+  "model": "append",
+  "value": 5
+ },
+ "notes": "The band deliberately tops out well below 1.0. The source marker is intermittent, so appending this ending to every line of the speaker is an INVENTION defect, not extra fidelity. 맨 형태 것입니다$ 는 제외한다: ~(으)ㄹ 것입니다 는 평범한 한국어 격식체이며, 인용한 선례도 인 것입니다$ 만을 제시한다. 이를 포함하면 충실한 존댓말에서 밀도가 부풀어 INVENTION 오판이 나고, 평탄화된 번역이 마커를 가진 것으로 집계되어 LOSS 를 놓친다. edition_channel 은 unpublished 로 정정한다: 이 실현이 인용한 선례 중 adopted 인 것이 없으며, 이 한국어 형태는 이 프로젝트의 제안이다. 출판 경로를 사실과 다르게 표기하면 P2 가 봉인할 산출물에 거짓 출처가 실린다.",
+ "pattern_set": [
+  "인 것입니다[.!?…]*$",
+  "인 거예요[.!?…]*$"
+ ],
+ "precedents": [
+  "prec_nanodesu_geosipnida_kr"
+ ],
+ "source_lang": "ja",
+ "source_marker": "~なのです",
+ "target_lang": "ko",
+ "target_realisation": "~인 것입니다 / ~인 거예요",
+ "type_id": "ja_nanodesu"
+}

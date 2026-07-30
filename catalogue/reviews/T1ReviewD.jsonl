@@ -1,0 +1,16 @@
+{"note": "Quote 'おどろかないでござる' contains でござる and matches the cited V+否定+ござる locator for ハットリくん.", "reviewer": "T1ReviewD", "sample_id": "s101", "verdict": "accept"}
+{"note": "'見ちゃおれんでござる' is a V+negation+ござる token in 新忍者ハットリくん, matching the locator.", "reviewer": "T1ReviewD", "sample_id": "s102", "verdict": "accept"}
+{"note": "'いたくないでござる' is an adjective+negation+ござる token, exactly the A+否定+ござる pattern cited.", "reviewer": "T1ReviewD", "sample_id": "s103", "verdict": "accept"}
+{"note": "'だましたでござるな' shows past-tense V+ござる as the (15) locator states.", "reviewer": "T1ReviewD", "sample_id": "s104", "verdict": "accept"}
+{"note": "'入るでござるか' shows ござる followed by final particle か, matching locator (16).", "reviewer": "T1ReviewD", "sample_id": "s105", "verdict": "accept"}
+{"note": "'いい考えがござる' is the existential-verb old usage cited at 4.2.2 (18), attesting ござる in the work.", "reviewer": "T1ReviewD", "sample_id": "s106", "verdict": "accept"}
+{"note": "'ただものではござらぬ' is 体言+でござる (negated), attesting the ござる marker in the named work.", "reviewer": "T1ReviewD", "sample_id": "s107", "verdict": "accept"}
+{"note": "'でござるよ' line is cited as cross-work corroboration, attesting ござる in るろうに剣心.", "reviewer": "T1ReviewD", "sample_id": "s108", "verdict": "accept"}
+{"note": "Quote contains both わし and じゃ and is cited under the 老人語 section, documenting them as role-language markers.", "reviewer": "T1ReviewD", "sample_id": "s121", "verdict": "accept"}
+{"note": "Cited 博士語 section presents ワシ/じゃ/のう forms as the class's characteristic markers.", "reviewer": "T1ReviewD", "sample_id": "s122", "verdict": "accept"}
+{"note": "Quote is the bare string '〜じゃのう' with no predication and no locator tie to 児童向け昔話, so it documents nothing about the claimed class.", "reviewer": "T1ReviewD", "sample_id": "s123", "verdict": "reject"}
+{"note": "Passage explicitly ties 〜ワン/〜ニャ to anthropomorphised animals, documenting the marker for that class.", "reviewer": "T1ReviewD", "sample_id": "s131", "verdict": "accept"}
+{"note": "Three ワン-final lines are cited for 獅子丸 in 新忍者ハットリくん, attesting the marker in that work.", "reviewer": "T1ReviewD", "sample_id": "s132", "verdict": "accept"}
+{"note": "Passage names バカボンのパパ with 「～なのだ」 as a キャラ語尾 example, attesting the marker for 天才バカボン.", "reviewer": "T1ReviewD", "sample_id": "s141", "verdict": "accept"}
+{"note": "Quote gives only っす conjugation forms; neither it nor the bare locator (4b) ties っす to 体育会系後輩キャラクタ, so the class claim is unattested.", "reviewer": "T1ReviewD", "sample_id": "s151", "verdict": "reject"}
+{"note": "Passage defines 視覚方言 as deliberate spelling distortion under the English-language section, documenting the marker for that class.", "reviewer": "T1ReviewD", "sample_id": "s161", "verdict": "accept"}

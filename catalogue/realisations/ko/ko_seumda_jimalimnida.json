@@ -1,0 +1,25 @@
+{
+ "density_band_default": [
+  0.5,
+  0.95
+ ],
+ "edition_channel": "unpublished",
+ "id": "ko_seumda_jimalimnida",
+ "length_cost": {
+  "model": "append",
+  "value": 6
+ },
+ "notes": "Six characters appended per unit, so this realisation is the one most likely to fail a CPS budget and fall back to phoneme substitution. 맨 형태 말입니다$ 는 제외한다: ~라는 말입니다 는 평범한 격식체이고, 인용한 두 선례 모두 지 말입니다$ 만을 제시한다. preset 파생으로 ko_danakka_jimalimnida 에도 전파되므로 노출이 두 배가 된다. edition_channel 은 unpublished 로 정정한다: 이 실현이 인용한 선례 중 adopted 인 것이 없으며, 이 한국어 형태는 이 프로젝트의 제안이다. 출판 경로를 사실과 다르게 표기하면 P2 가 봉인할 산출물에 거짓 출처가 실린다.",
+ "pattern_set": [
+  "지 말입니다[.!?…]*$"
+ ],
+ "precedents": [
+  "prec_akunomusume_ssu_ko"
+ ],
+ "source_lang": "ja",
+ "source_marker": "~っス",
+ "target_axis": "ending_transform",
+ "target_lang": "ko",
+ "target_realisation": "~지 말입니다",
+ "type_id": "ja_seumda_ssu"
+}

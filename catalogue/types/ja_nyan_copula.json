@@ -1,0 +1,16 @@
+{
+ "axis": "ending_transform",
+ "description": "Feline sentence-final copula substitution.",
+ "id": "ja_nyan_copula",
+ "pattern_set": [
+  "にゃ[。！？!?…♪]*$",
+  "にゃあ[。！？!?…♪]*$",
+  "だにゃ[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "An individual quirk, not a register: the cat copula replaces the sentence-final copula for one speaker while the rest of the grammar stays ordinary. Density is typically intermittent rather than total.",
+  "origin": "character"
+ },
+ "source_lang": "ja",
+ "source_marker": "~にゃ / ~にゃあ"
+}

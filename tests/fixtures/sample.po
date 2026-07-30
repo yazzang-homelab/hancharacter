@@ -1,0 +1,11 @@
+msgctxt "orbit"
+msgid ""
+"Pilot says \"ready\""
+" now."
+msgstr ""
+"Guide says \"set\""
+" now %1$s{name}."
+
+#~ msgctxt "discarded"
+#~ msgid "Old"
+#~ msgstr "Old"

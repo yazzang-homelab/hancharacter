@@ -1,0 +1,18 @@
+{
+ "axis": "orthographic_distortion",
+ "description": "French-accented English eye dialect.",
+ "id": "en_eye_dialect_fleur",
+ "pattern_set": [
+  "\\bzis\\b",
+  "\\bzat\\b",
+  "\\bze\\b",
+  "'Arry\\b",
+  "\\beez\\b"
+ ],
+ "provenance": {
+  "notes": "Accent rendered by respelling rather than by grammar: the English is orthographically distorted while the syntax stays standard. This is the one EN-source seed type, and it exercises measure/en.py as load-bearing rather than decorative.",
+  "origin": "character"
+ },
+ "source_lang": "en",
+ "source_marker": "French-accented eye dialect (zis / zat / 'Arry)"
+}

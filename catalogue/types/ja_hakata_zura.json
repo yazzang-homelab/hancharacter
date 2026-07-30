@@ -1,0 +1,15 @@
+{
+ "axis": "dialect_policy",
+ "description": "Auxiliary: regional dialect precedent carrier.",
+ "id": "ja_hakata_zura",
+ "pattern_set": [
+  "ずら[。！？!?…]*$",
+  "ずらー[。！？!?…]*$"
+ ],
+ "provenance": {
+  "notes": "Auxiliary type. Regional ending carried into Korean as a southeastern regional flavour. The specific regional attribution of this ending is recorded as reported by the cited reference and is NOT independently confirmed; see catalogue/SOURCES.md.",
+  "origin": "regional"
+ },
+ "source_lang": "ja",
+ "source_marker": "~ずら"
+}

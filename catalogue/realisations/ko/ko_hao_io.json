@@ -1,0 +1,30 @@
+{
+ "density_band_default": [
+  0.55,
+  1.0
+ ],
+ "edition_channel": "unpublished",
+ "id": "ko_hao_io",
+ "length_cost": {
+  "model": "append",
+  "value": 2
+ },
+ "notes": "Two adopted renderings exist for this marker across editions, so this realisation has SIBLINGS selected by the contract's edition_medium rather than one canonical form. 소이다$ 를 추가한다: 오이다$ 는 있소이다 를 잡지 못해, 하오체를 행사하도록 작성된 대조 행을 하오체를 집행하는 실현이 놓치고 있었다. edition_channel corrected official -> unpublished: prec_gozaru_io_ko was corrected to contested/unpublished for consistency with its siblings, so no cited adopted precedent supports a published channel for this realisation. The lint caught this propagation.",
+ "pattern_set": [
+  "이오[.!?…]*$",
+  "하오[.!?…]*$",
+  "구려[.!?…]*$",
+  "오이다[.!?…]*$",
+  "소이다[.!?…]*$"
+ ],
+ "precedents": [
+  "prec_gozaru_io_ko",
+  "prec_gozaru_haoche_ko"
+ ],
+ "source_lang": "ja",
+ "source_marker": "~ござる",
+ "target_axis": "ending_transform",
+ "target_lang": "ko",
+ "target_realisation": "~이오 / 하오체",
+ "type_id": "ja_hao_gozaru"
+}

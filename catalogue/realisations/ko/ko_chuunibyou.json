@@ -1,0 +1,27 @@
+{
+ "density_band_default": [
+  0.3,
+  0.8
+ ],
+ "edition_channel": "unpublished",
+ "id": "ko_chuunibyou",
+ "length_cost": {
+  "model": "multiply",
+  "value": 1.15
+ },
+ "notes": "A frame, so the cost is multiplicative over the utterance rather than a fixed suffix. Under a subtitle budget the frame is the first thing an editor cuts, which is why it is measured per utterance. edition_channel 은 unpublished 로 정정한다: 이 실현이 인용한 선례 중 adopted 인 것이 없으며, 이 한국어 형태는 이 프로젝트의 제안이다. 출판 경로를 사실과 다르게 표기하면 P2 가 봉인할 산출물에 거짓 출처가 실린다.",
+ "pattern_set": [
+  "^내 이름은",
+  "그대(?:는|를|여|의)",
+  "^어둠의",
+  "각성하라"
+ ],
+ "precedents": [
+  "prec_chuuni_frame_kr"
+ ],
+ "source_lang": "ja",
+ "source_marker": "grandiose self-naming frame",
+ "target_lang": "ko",
+ "target_realisation": "archaic frame: 내 이름은 / 그대 / 어둠의",
+ "type_id": "ja_chuunibyou_frame"
+}
