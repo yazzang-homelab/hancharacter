@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+# Install hancharacter as a slash-invocable skill for GJC, Claude Code and Codex.
+#
+# All three read a `SKILL.md` with `name` + `description` frontmatter, so one
+# canonical file at skills/hancharacter/SKILL.md is symlinked into each tool's
+# skill root. Symlinks rather than copies: pulling the repo updates every tool.
+#
+#   ./bin/install-skill              install for every tool that is present
+#   ./bin/install-skill --copy       copy instead of symlink
+#   ./bin/install-skill --project    install into ./.gjc, ./.claude, ./.codex
+#   ./bin/install-skill --uninstall  remove what this script installed
+#   ./bin/install-skill --check      report what is installed, change nothing
+set -euo pipefail
+
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SRC="$REPO/skills/hancharacter/SKILL.md"
+CMD="$REPO/.claude/commands/hancharacter.md"
+MODE=link
+SCOPE=user
+ACTION=install
+
+for arg in "$@"; do
+  case "$arg" in
+    --copy) MODE=copy ;;
+    --project) SCOPE=project ;;
+    --uninstall) ACTION=uninstall ;;
+    --check) ACTION=check ;;
+    -h|--help) sed -n '2,13p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    *) echo "unknown option: $arg" >&2; exit 2 ;;
+  esac
+done
+
+[ -f "$SRC" ] || { echo "missing $SRC" >&2; exit 1; }
+
+if [ "$SCOPE" = project ]; then
+  GJC_ROOT="$PWD/.gjc/skills"; CLAUDE_ROOT="$PWD/.claude/skills"
+  CLAUDE_CMD_ROOT="$PWD/.claude/commands"; CODEX_ROOT="$PWD/.codex/skills"
+else
+  GJC_ROOT="${GJC_HOME:-$HOME/.gjc}/skills"
+  CLAUDE_ROOT="$HOME/.claude/skills"
+  CLAUDE_CMD_ROOT="$HOME/.claude/commands"
+  CODEX_ROOT="${CODEX_HOME:-$HOME/.codex}/skills"
+fi
+
+place() { # place <target-file> <source-file>
+  local target="$1" source="$2"
+  mkdir -p "$(dirname "$target")"
+  rm -rf "$target"
+  if [ "$MODE" = copy ]; then cp "$source" "$target"; else ln -s "$source" "$target"; fi
+}
+
+report() { # report <label> <target> <root>
+  local label="$1" target="$2" root="$3"
+  if [ ! -d "$root" ] && [ "$SCOPE" = user ]; then
+    printf '  %-12s -\n' "$label"
+  elif [ -L "$target" ]; then
+    printf '  %-12s symlink -> %s\n' "$label" "$(readlink "$target")"
+  elif [ -f "$target" ]; then
+    printf '  %-12s copy\n' "$label"
+  else
+    printf '  %-12s not installed\n' "$label"
+  fi
+}
+
+GJC_T="$GJC_ROOT/hancharacter/SKILL.md"
+CLAUDE_T="$CLAUDE_ROOT/hancharacter/SKILL.md"
+CLAUDE_C="$CLAUDE_CMD_ROOT/hancharacter.md"
+CODEX_T="$CODEX_ROOT/hancharacter/SKILL.md"
+
+case "$ACTION" in
+check)
+  echo "hancharacter skill ($SCOPE scope)"
+  report gjc "$GJC_T" "$GJC_ROOT"
+  report claude "$CLAUDE_T" "$CLAUDE_ROOT"
+  report "claude-cmd" "$CLAUDE_C" "$CLAUDE_CMD_ROOT"
+  report codex "$CODEX_T" "$CODEX_ROOT"
+  exit 0 ;;
+uninstall)
+  for t in "$GJC_T" "$CLAUDE_T" "$CLAUDE_C" "$CODEX_T"; do
+    [ -e "$t" ] || [ -L "$t" ] || continue
+    rm -f "$t"; rmdir "$(dirname "$t")" 2>/dev/null || true
+    echo "removed $t"
+  done
+  exit 0 ;;
+esac
+
+installed=0
+# A tool is only targeted when its root already exists at user scope, so this
+# never creates a config tree for a tool the machine does not have.
+for pair in "gjc:$GJC_ROOT:$GJC_T" "claude:$CLAUDE_ROOT:$CLAUDE_T" "codex:$CODEX_ROOT:$CODEX_T"; do
+  label="${pair%%:*}"; rest="${pair#*:}"; root="${rest%%:*}"; target="${rest#*:}"
+  if [ "$SCOPE" = project ] || [ -d "$(dirname "$root")" ]; then
+    place "$target" "$SRC"; echo "installed $label -> $target"; installed=$((installed + 1))
+  else
+    echo "skipped $label (no $(dirname "$root"))"
+  fi
+done
+
+# Claude also takes a thin slash command that points at the skill.
+if [ -f "$CMD" ] && { [ "$SCOPE" = project ] || [ -d "$HOME/.claude" ]; }; then
+  place "$CLAUDE_C" "$CMD"; echo "installed claude-cmd -> $CLAUDE_C"
+fi
+
+[ "$installed" -gt 0 ] || { echo "no supported tool found" >&2; exit 1; }
+echo
+echo "Invoke with /hancharacter in GJC, Claude Code or Codex."

@@ -4,6 +4,23 @@
 
 **한국어 가이드: [GUIDE.ko.md](GUIDE.ko.md)**
 
+## Slash-command install (GJC / Claude Code / Codex)
+
+All three read a `SKILL.md` with `name` + `description` frontmatter, so the single
+canonical file at `skills/hancharacter/SKILL.md` is symlinked into each tool's skill
+root. Pulling the repo updates every tool at once.
+
+```sh
+./bin/install-skill            # install for each tool that is present
+./bin/install-skill --check    # report only
+./bin/install-skill --copy     # copy instead of symlink
+./bin/install-skill --project  # install into ./.gjc ./.claude ./.codex
+./bin/install-skill --uninstall
+```
+
+`GJC_HOME` and `CODEX_HOME` are honoured. A tool whose config root is absent is
+skipped rather than created. Then invoke `/hancharacter <task>`.
+
 
 The tool separates three claims that must not be confused:
 

@@ -61,6 +61,39 @@ cd hancharacter
 
 지원 입력 포맷: 일반 텍스트, JSON, CSV, PO(gettext), XLIFF, SRT, VTT, ASS, EPUB, 그리고 읽기 전용 호스트 JSON. 확장자로 자동 판별하고 `--format`으로 강제할 수 있습니다. **선언되지 않은 확장자는 조용히 JSON으로 읽지 않고 큰 소리로 실패합니다** — 조용한 폴백이 어댑터 하나가 통째로 죽어 있는 걸 두 단계나 숨겼던 적이 있습니다.
 
+## 슬래시 명령으로 쓰기 (GJC / Claude Code / Codex)
+
+세 도구 모두 `name` + `description` 프론트매터를 가진 `SKILL.md`를 읽습니다. 정본은
+`skills/hancharacter/SKILL.md` 하나이고, 설치 스크립트가 각 도구의 스킬 루트에
+심볼릭 링크를 겁니다 — 레포를 pull 하면 세 도구에 동시에 반영됩니다.
+
+```sh
+./bin/install-skill            # 설치돼 있는 도구에만 설치
+./bin/install-skill --check    # 무엇이 설치됐는지만 보고
+./bin/install-skill --copy     # 심볼릭 링크 대신 복사
+./bin/install-skill --project  # 현재 프로젝트의 ./.gjc ./.claude ./.codex 에 설치
+./bin/install-skill --uninstall
+```
+
+설치 위치:
+
+| 도구 | 경로 |
+|---|---|
+| GJC (가재코드) | `~/.gjc/skills/hancharacter/SKILL.md` |
+| Claude Code | `~/.claude/skills/hancharacter/SKILL.md` + `~/.claude/commands/hancharacter.md` |
+| Codex | `~/.codex/skills/hancharacter/SKILL.md` |
+
+`GJC_HOME` / `CODEX_HOME` 환경변수를 설정했으면 그쪽을 따릅니다. 설치되지 않은 도구는
+건너뛰며, 없는 도구의 설정 트리를 새로 만들지 않습니다.
+
+설치 후:
+
+```
+/hancharacter 이 자막 파일에서 화자별 말투 일관성 검사해줘
+/hancharacter your.srt 평탄화된 대사 찾아줘
+/hancharacter 하오체 계약을 translator_declared 로 봉인해서 LOSS 잡아줘
+```
+
 ## 3. 핵심 개념 네 가지
 
 ### 밀도(density), 100%가 아니라
