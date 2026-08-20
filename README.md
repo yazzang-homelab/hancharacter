@@ -73,6 +73,40 @@ Host-pipeline composition (P5/P6b) is NOT part of v1 and is report-level only un
 
 The project does not claim to judge literary quality, to infer a speaker from a guess, or to decide whether mapping one regional dialect to another preserves its social meaning. It records where those decisions require evidence or a human ruling.
 
+## Reading a host pipeline's sealed text
+
+Two doors, both explicit, neither importing the other repository.
+
+`io_adapters.read_host_json` is unchanged and keeps its ten input formats.
+
+`manifest_adapter` is a separate, narrower door for a host that seals its text in
+a manifest. It re-derives the manifest digest from the entries themselves using
+the host's published rule rather than reading the recorded value, which catches a
+manifest whose text moved while its digest did not. It does **not** catch a
+forgery: the rule is published, so a recomputed digest is accepted. The digest is
+a checksum, not a signature - it establishes that a file is internally
+consistent, never that it came from a build you trust. A test pins that
+limitation so it cannot be re-described as protection.
+
+The join is strict in both directions. A row absent from the manifest is refused,
+because a reviewer would be judging a line the build does not ship; a manifest
+entry with no row is refused for the mirror reason. Target text comes from the
+manifest rather than the exporter's copy of it.
+
+Language axes arrive declared, never inferred. `evidence`, `pivot` and `target`
+are roles, not languages, and a transposed export still fills three columns while
+the reader reads three columns - only the meaning is wrong, and nothing
+downstream can detect it.
+
+`voice_run` is the producer half: it assembles a complete, explicit input set for
+`gates.run` and serialises the findings verbatim, so a host gets a verdict file
+rather than a parsed exit code. Contract validation is `contracts.validate_contract`
+plus the current-seal check; the shared schema shape is deliberately not used, as
+`contracts.py` states in its own docstring. There is no CLI for it yet - `produce()`
+takes ten inputs, three of them callables that other gate commands assemble from a
+work profile, and a half-wired subcommand would be a surface that exists and does
+not work.
+
 ## Documentation map
 
 - `docs/quickstart.md` gives checkout-only commands and an authored synthetic fixture.
