@@ -1,6 +1,6 @@
 ---
 name: hancharacter
-description: 번역에서 캐릭터 말투(役割語/말투 어미)가 뭉개지는 것을 기계적으로 잡는다. 원문 캐릭터의 말투 표지를 측정해 계약으로 봉인하고, 번역이 그 목소리를 지웠거나(LOSS) 없던 걸 만들어냈으면(INVENTION) 거부한다. 자막·PO·XLIFF·CSV·EPUB·ASS 등 실제 파일을 읽는다. 게임/만화/웹툰/자막/소설 번역의 캐릭터 목소리 보존을 검사·집행할 때, 또는 기존 번역의 말투 일관성을 감사할 때 사용.
+description: 번역에서 캐릭터 말투(役割語/말투 어미)가 뭉개지는 것을 기계적으로 잡는다. 원문 캐릭터의 말투 표지를 측정해 계약으로 봉인하고, 번역이 그 목소리를 지웠거나(LOSS) 없던 걸 만들어냈으면(INVENTION) 거부한다. 자막·PO·XLIFF·CSV·EPUB·ASS 등 실제 파일을 읽는다. 게임/만화/웹툰/자막/소설 번역의 캐릭터 목소리 보존을 검사·집행할 때, 또는 기존 번역의 말투 일관성을 감사할 때 사용. Enforces character voice (speech style, role language) preservation in a translation, and produces the verdict that the `hanpatch` game/ROM localisation pipeline's voice gate consumes — load this alongside `hanpatch` whenever a title declares a `voice_contract`, or when auditing an existing fan translation for flattened or fabricated speech style.
 argument-hint: "<작업 설명> (예: 이 자막 파일에서 화자별 말투 일관성 검사 / 하오체 계약 봉인해서 평탄화 잡아줘)"
 ---
 
